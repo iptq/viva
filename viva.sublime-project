@@ -9,8 +9,8 @@
 	{
 		"less2css":
 		{
-			"autoCompile": true,
-			"minify": false,
+			"autoCompile": false,
+			"minify": true,
 			"outputDir": "./dist",
 			"outputFile": "viva.css",
 			"lessBaseDir": "./less",
