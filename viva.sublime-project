@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"path": "/C/Users/Michael/Cloud/GitHub/viva"
+		}
+	],
+	"settings":
+	{
+		"less2css":
+		{
+			"autoCompile": true,
+			"minify": false,
+			"outputDir": "./dist",
+			"outputFile": "viva.css",
+			"lessBaseDir": "./less",
+			"main_file": "viva.less"
+		}
+	}
+}
