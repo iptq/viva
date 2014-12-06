@@ -1,0 +1,53 @@
+@import "links.less";
+
+body {
+	color: @text-color;
+	font-family: @font-name;
+}
+
+.centered {
+	text-align: center;
+}
+
+.title {
+	font-size: 5.0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+h1 {
+	font-size: 2.7em;
+}
+
+h2 {
+	font-size: 2.3em;
+}
+
+h3 {
+	font-size: 1.9em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1.1em;
+}
+
+h6 {
+	font-size: 0.7em;
+}
+
+.em {
+	font-weight: bold;
+	color: @color-blue;
+	.transition(0.45s all ease-out);
+}
+
+.em:hover {
+	color: lighten(@color-blue, 10%);
+}
