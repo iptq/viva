@@ -1,3 +1,18 @@
 a {
 	color: @color-blue;
+	text-decoration: none;
+	padding: 0px 2px;
+	margin: 2px;
+	background-color: lighten(@color-blue, 60%);
+	.border-radius(2px);
+	.transition(0.25s all ease-out);
+}
+
+a:hover {
+	background-color: lighten(@color-blue, 55%);
+}
+
+a:active {
+	background-color: lighten(@color-blue, 50%);
+	.transform(perspective(500px) translateZ(-20px));
 }
