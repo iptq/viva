@@ -33,6 +33,11 @@
 
 .section-raised {
 	.box-shadow(0px 5px 5px @shadow-color);
+	.transition(0.25s all ease-out);
+}
+
+.section-raised:hover {
+	.box-shadow(0px 5px 5px @shadow-color-dark);
 }
 
 //== Banner
@@ -49,5 +54,5 @@
 	}
 }
 
-.banner-color(white, @color-white, @color-white-text);
+.banner-color(white, darken(@color-white, 5%), @color-white-text);
 .banner-color(blue, @color-blue, @color-blue-text);
