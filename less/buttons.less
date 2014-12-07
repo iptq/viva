@@ -1,0 +1,36 @@
+.button {
+	padding: 1em;
+	font-size: 1em;
+	background-color: #FFF;
+	outline: none;
+	border: none;
+	.box-shadow(0px 2px 3px @shadow-color);
+	.transition(0.45s all ease-out);
+	cursor: pointer;
+}
+
+.button:hover {
+	.box-shadow(0px 3px 4px @shadow-color);
+}
+
+.button:active {
+	.box-shadow(0px 4px 5px @shadow-color);
+}
+
+.button-color(@string: white, @color: @color-white, @color-text: @color-white-text) {
+	.button-@{string} {
+		background-color: @color;
+		color: @color-text;
+	}
+
+	.button-@{string}:hover {
+		background-color: lighten(@color, 10%)
+	}
+
+	.button-@{string}:active {
+		background-color: darken(@color, 10%)
+	}
+}
+
+.button-color();
+.button-color(blue, @color-blue, @color-blue-text);
