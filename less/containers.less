@@ -38,7 +38,16 @@
 //== Banner
 
 .banner {
-	background-color: lighten(@gray-base, 76.5%);
 	color: @white;
 	padding: 40px 20px;
 }
+
+.banner-color(@string, @bgcolor, @color) {
+	.banner-@{string} {
+		background-color: @bgcolor;
+		color: @color;
+	}
+}
+
+.banner-color(white, @color-white, @color-white-text);
+.banner-color(blue, @color-blue, @color-blue-text);
