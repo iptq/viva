@@ -32,13 +32,68 @@
 }
 
 .section-raised {
-	.box-shadow(0px 5px 5px @shadow-color);
+	.box-shadow(0px 2.5px 5px @shadow-color);
 	.transition(0.25s all ease-out);
 }
 
 .section-raised:hover {
-	.box-shadow(0px 5px 5px @shadow-color-dark);
+	.box-shadow(0px 2.5px 5px @shadow-color-dark);
 }
+
+//== Panel
+
+@panel-margin: 15px;
+
+.panel {
+	display: block;
+	background-color: #FFF;
+	.box-shadow(0px 2px 4px @shadow-color);
+	border: 1px solid @gray-lighter;
+	margin-top: @panel-margin;
+	margin-bottom: @panel-margin;
+}
+
+.panel > .panel-header {
+	padding: 10px 20px;
+	background-color: @gray-lighter;
+}
+
+.panel > .panel-header > h1, .panel > .panel-header > h2, .panel > .panel-header > h3, .panel > .panel-header > h4, .panel > .panel-header > h5, .panel > .panel-header > h6 {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.panel > .panel-header > h1 {
+	font-size: 1.3em;
+}
+
+.panel > .panel-header > h2 {
+	font-size: 1.2em;
+}
+
+.panel > .panel-header > h3 {
+	font-size: 1.1em;
+}
+
+.panel > .panel-body {
+	padding: 20px;
+}
+
+.panel-color(@string, @bgcolor, @color) {
+	.panel-@{string} {
+		border: 1px solid @bgcolor;
+	}
+	.panel-@{string} > .panel-header {
+		background-color: @bgcolor;
+		color: @color;
+	}
+}
+
+.panel-color(blue, @color-blue, @color-blue-text);
+.panel-color(green, @color-green, @color-green-text);
+.panel-color(yellow, @color-yellow, @color-yellow-text);
+.panel-color(purple, @color-purple, @color-purple-text);
+.panel-color(red, @color-red, @color-red-text);
 
 //== Banner
 

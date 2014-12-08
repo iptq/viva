@@ -25,18 +25,88 @@ body {
   padding: 0px;
 }
 .section-raised {
-  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.25s all ease-out;
   -moz-transition: 0.25s all ease-out;
   -ms-transition: 0.25s all ease-out;
   -o-transition: 0.25s all ease-out;
 }
 .section-raised:hover {
-  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.5);
+}
+.panel {
+  display: block;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  border: 1px solid #eeeeee;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.panel > .panel-header {
+  padding: 10px 20px;
+  background-color: #eeeeee;
+}
+.panel > .panel-header > h1,
+.panel > .panel-header > h2,
+.panel > .panel-header > h3,
+.panel > .panel-header > h4,
+.panel > .panel-header > h5,
+.panel > .panel-header > h6 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.panel > .panel-header > h1 {
+  font-size: 1.3em;
+}
+.panel > .panel-header > h2 {
+  font-size: 1.2em;
+}
+.panel > .panel-header > h3 {
+  font-size: 1.1em;
+}
+.panel > .panel-body {
+  padding: 20px;
+}
+.panel-blue {
+  border: 1px solid #0066cc;
+}
+.panel-blue > .panel-header {
+  background-color: #0066cc;
+  color: #ffffff;
+}
+.panel-green {
+  border: 1px solid #33aa33;
+}
+.panel-green > .panel-header {
+  background-color: #33aa33;
+  color: #ffffff;
+}
+.panel-yellow {
+  border: 1px solid #eeaa33;
+}
+.panel-yellow > .panel-header {
+  background-color: #eeaa33;
+  color: #333333;
+}
+.panel-purple {
+  border: 1px solid #9933cc;
+}
+.panel-purple > .panel-header {
+  background-color: #9933cc;
+  color: #ffffff;
+}
+.panel-red {
+  border: 1px solid #cc0000;
+}
+.panel-red > .panel-header {
+  background-color: #cc0000;
+  color: #ffffff;
 }
 .banner {
   color: #ffffff;
